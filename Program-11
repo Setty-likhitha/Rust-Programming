@@ -1,0 +1,7 @@
+fn main() {
+    let x = 10.75;
+    let y = x as i32;
+
+    println!("Original value (f64): {}", x);
+    println!("After type casting to i32: {}", y);
+}

@@ -1,0 +1,14 @@
+fn main() {
+    let x = 5;
+    println!("Outside block - x: {}", x);
+    {
+        let x = x + 1;
+        println!("Inside first block - shadowed x: {}", x);
+        {
+            let x = x * 2;
+            println!("Inside nested block - shadowed x again: {}", x);
+        }
+        println!("Back to first block - x: {}", x);
+    }
+    println!("Outside all blocks - x: {}", x);
+}

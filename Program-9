@@ -1,0 +1,13 @@
+const INT_CONST: i32 = 100;
+const FLOAT_CONST: f64 = 3.14;
+const CHAR_CONST: char = 'A';
+const BOOL_CONST: bool = true;
+const STR_CONST: &str = "Rust";
+
+fn main() {
+    println!("Integer Constant: {}", INT_CONST);
+    println!("Float Constant: {}", FLOAT_CONST);
+    println!("Character Constant: {}", CHAR_CONST);
+    println!("Boolean Constant: {}", BOOL_CONST);
+    println!("String Constant: {}", STR_CONST);
+}

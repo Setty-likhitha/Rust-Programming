@@ -1,0 +1,8 @@
+fn main() {
+    let string_obj = String::from("Hello, Rust!");
+    let literal = "Welcome";
+    let converted = literal.to_string();
+
+    println!("String Object: {}", string_obj);
+    println!("Converted String Literal: {}", converted);
+}

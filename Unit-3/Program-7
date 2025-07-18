@@ -1,0 +1,13 @@
+fn main() {
+    let mut count = 0;
+    let mut number = 1;
+
+    while number <= 100 {
+        count += 1;
+        number *= 2;
+
+        println!("Iteration {}: number = {}", count, number);
+    }
+
+    println!("Total iterations until number > 100: {}", count);
+}

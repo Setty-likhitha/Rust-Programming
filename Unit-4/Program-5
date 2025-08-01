@@ -1,0 +1,16 @@
+fn main() {
+    let n = 5;
+    let squares = arr_square(n);
+
+    println!("Squares up to {}: {:?}", n, squares);
+}
+
+fn arr_square(n: usize) -> Vec<i32> {
+    let mut squares = Vec::new();
+    
+    for i in 1..=n {
+        squares.push(i * i);
+    }
+    
+    squares
+}

@@ -1,0 +1,24 @@
+use std::io;
+
+fn main() {
+    let mut input_length = String::new();
+    let mut input_width = String::new();
+
+    println!("Enter the length of the rectangle:");
+    io::stdin().read_line(&mut input_length).expect("Failed to read input");
+    let length: f64 = input_length.trim().parse().expect("Please enter a valid number");
+
+    println!("Enter the width of the rectangle:");
+    io::stdin().read_line(&mut input_width).expect("Failed to read input");
+    let width: f64 = input_width.trim().parse().expect("Please enter a valid number");
+
+    let (area, perimeter) = calculate_area_perimeter(length, width);
+
+    println!("Area: {}, Perimeter: {}", area, perimeter);
+}
+
+fn calculate_area_perimeter(x: f64, y: f64) -> (f64, f64) {
+    let area = x * y;
+    let perimeter = 2.0 * (x + y);
+    (area, perimeter)
+}

@@ -1,0 +1,16 @@
+fn main() {
+    let number = 12;
+
+    test_divisibility_by_3_4(number);
+}
+fn test_divisibility_by_3_4(n: i32) {
+    if n % 3 == 0 && n % 4 == 0 {
+        println!("{} is divisible by both 3 and 4.", n);
+    } else if n % 3 == 0 {
+        println!("{} is divisible by 3.", n);
+    } else if n % 4 == 0 {
+        println!("{} is divisible by 4.", n);
+    } else {
+        println!("{} is not divisible by 3 or 4.", n);
+    }
+}
